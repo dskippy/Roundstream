@@ -1,5 +1,3 @@
-module ThreadList = struct
-
 class ['a] thread_list =
     object
         val mutable items = []
@@ -22,6 +20,4 @@ class ['a] thread_list =
 
         method length () = List.length items
     end;;
-
-end
 
