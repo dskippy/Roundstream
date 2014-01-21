@@ -1,5 +1,3 @@
-open ThreadList
-
 type stream_settings = {
     sample_rate : int;
     buffer_length : int;
@@ -54,7 +52,7 @@ class round_stream (settings : stream_settings) =
     object (self)
         val shout = Shout.new_shout ()
         val encoder = Lame.create_encoder ()
-        val mutable inputs = new thread_list (*ThreadList.thread_list*)
+        val mutable inputs = new ThreadList.thread_list
         val mutable active = false
 
         method start () =
