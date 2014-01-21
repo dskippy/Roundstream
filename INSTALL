@@ -1,0 +1,6 @@
+sudo apt-get install oasis libshout-ocaml-dev libmm-ocaml-dev libmp3lame-ocaml-dev libshout-ocaml-dev liblablgtk2-ocaml-dev
+oasis setup
+ocaml setup.ml -configure
+ocaml setup.ml -build
+ocaml setup.ml -install
+

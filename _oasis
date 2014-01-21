@@ -1,0 +1,14 @@
+OASISFormat: 0.3
+Name:        RoundStream
+Version:     0.1
+Synopsis:    Stream audio for the Roundware project.
+Authors:     Mike MacHenry
+License:     LGPL-3.0
+Plugins:     DevFiles (0.3)
+
+Executable roundstream
+  Path:       src
+  BuildTools: ocamlbuild
+  MainIs:     roundstream.ml
+  BuildDepends: mm, shout, lame, threads, lablgtk2
+
